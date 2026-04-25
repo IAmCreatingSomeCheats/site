@@ -3,6 +3,8 @@ import HeroSection from "../components/server/HeroSection";
 import FeaturesSection from "../components/server/FeaturesSection";
 import StoreSection from "../components/server/StoreSection";
 import LeaderboardSection from "../components/server/LeaderboardSection";
+import RulesSection from "../components/server/RulesSection";
+import ServerListingSection from "../components/server/ServerListingSection";
 import CommunitySection from "../components/server/CommunitySection";
 import FooterSection from "../components/server/FooterSection";
 
@@ -14,6 +16,8 @@ export default function Home() {
       <FeaturesSection />
       <StoreSection />
       <LeaderboardSection />
+      <RulesSection />
+      <ServerListingSection />
       <CommunitySection />
       <FooterSection />
     </div>
