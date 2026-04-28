@@ -1,7 +1,6 @@
 import Navbar from "../components/server/Navbar";
 import HeroSection from "../components/server/HeroSection";
 import FeaturesSection from "../components/server/FeaturesSection";
-import StoreSection from "../components/server/StoreSection";
 import LeaderboardSection from "../components/server/LeaderboardSection";
 import RulesSection from "../components/server/RulesSection";
 import ServerListingSection from "../components/server/ServerListingSection";
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
-      <StoreSection />
       <LeaderboardSection />
       <RulesSection />
       <ServerListingSection />

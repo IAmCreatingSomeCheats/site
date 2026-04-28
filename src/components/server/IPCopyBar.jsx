@@ -4,7 +4,7 @@ import { Copy, Check } from "lucide-react";
 
 export default function IPCopyBar({ variant = "default" }) {
   const [copied, setCopied] = useState(false);
-  const ip = "PLAY.3DEATHS.NET";
+  const ip = "SMP.3DEATHS.NET";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(ip.toLowerCase());
