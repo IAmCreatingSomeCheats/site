@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import IPCopyBar from "./IPCopyBar";
 
-const HERO_IMG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/a8a66d9c5_generated_5e3df1d4.png";
+const HERO_IMG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/fdf8f2cf8_generated_image.png";
 
 export default function HeroSection() {
   return (

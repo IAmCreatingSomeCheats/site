@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, BookOpen, Globe } from "lucide-react";
 
-const COMMUNITY_IMG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/4eb64b89d_generated_36fd2599.png";
+const COMMUNITY_IMG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/fdf8f2cf8_generated_image.png";
 
 const LINKS = [
   {

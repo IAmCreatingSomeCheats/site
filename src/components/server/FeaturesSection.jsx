@@ -49,14 +49,31 @@ export default function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-20"
+          className="mb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
         >
-          <span className="text-soul-cyan text-sm font-bold tracking-[0.3em] uppercase">
-            The Rules of the Realm
-          </span>
-          <h2 className="font-display font-black text-4xl md:text-6xl text-bone mt-3">
-            Survive or Perish
-          </h2>
+          <div>
+            <span className="text-soul-cyan text-sm font-bold tracking-[0.3em] uppercase">
+              The Rules of the Realm
+            </span>
+            <h2 className="font-display font-black text-4xl md:text-6xl text-bone mt-3">
+              Survive or Perish
+            </h2>
+          </div>
+          {/* Pixel icon row */}
+          <div className="flex items-center gap-4 opacity-60">
+            <img
+              src="https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/7289bc253_generated_image.png"
+              alt="swords"
+              className="w-12 h-12 object-contain"
+              style={{ imageRendering: "pixelated" }}
+            />
+            <img
+              src="https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/07463d132_generated_image.png"
+              alt="skull"
+              className="w-12 h-12 object-contain"
+              style={{ imageRendering: "pixelated" }}
+            />
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-soul-cyan/10">

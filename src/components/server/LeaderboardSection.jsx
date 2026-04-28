@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Search, Trophy, Flame, Skull, Swords, AlertTriangle, HeartCrack, Zap } from "lucide-react";
 import TallyMarks from "./TallyMarks";
 
-const STATS_BG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/353a02a30_generated_ab329946.png";
+const STATS_BG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/1320dcce8_generated_image.png";
+const SKULL_ICON = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/07463d132_generated_image.png";
+const SWORD_ICON = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/7289bc253_generated_image.png";
 
 const PLAYERS = [
   { rank: 1, name: "VoidWalker",    kills: 47, deaths: 0, lives: 3, playtime: "142h", kdr: "∞" },
@@ -63,12 +65,14 @@ function SpotlightCard({ player, accent, label, icon: Icon, stat, statLabel }) {
         <span className="text-sm font-bold text-muted-foreground ml-2">{statLabel}</span>
       </div>
 
-      {/* Decorative background numeral */}
-      <div className={`absolute -right-4 -bottom-4 font-display font-black text-[6rem] leading-none select-none pointer-events-none ${
-        accent === "red" ? "text-blood-tax/5" : "text-soul-cyan/5"
-      }`}>
-        {player.lives === 1 ? "!" : "0"}
-      </div>
+      {/* Decorative pixel icon background */}
+      <img
+        src={accent === "red" ? SKULL_ICON : SWORD_ICON}
+        alt=""
+        aria-hidden
+        className="absolute -right-4 -bottom-4 w-28 h-28 object-contain opacity-5 pointer-events-none select-none"
+        style={{ imageRendering: "pixelated" }}
+      />
     </motion.div>
   );
 }
@@ -187,11 +191,11 @@ export default function LeaderboardSection() {
                 >
                   <div className="flex items-center gap-3 mb-4">
                     {i === 0 ? (
-                      <Trophy className="w-6 h-6 text-soul-cyan" />
+                      <img src={SWORD_ICON} alt="top killer" className="w-7 h-7 object-contain" style={{ imageRendering: "pixelated" }} />
                     ) : i === 1 ? (
                       <Flame className="w-6 h-6 text-muted-foreground" />
                     ) : (
-                      <Skull className="w-6 h-6 text-muted-foreground" />
+                      <img src={SKULL_ICON} alt="skull" className="w-7 h-7 object-contain opacity-60" style={{ imageRendering: "pixelated" }} />
                     )}
                     <span className="text-sm text-muted-foreground font-bold tracking-wider">
                       #{i + 1}
