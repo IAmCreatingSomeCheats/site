@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import IPCopyBar from "./IPCopyBar";
+import PlayerCount from "./PlayerCount";
 
 const HERO_IMG = "https://media.base44.com/images/public/69ec9d2220cde9dc531cc8ce/fdf8f2cf8_generated_image.png";
 
@@ -70,8 +71,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
+          className="flex flex-col items-center gap-4"
         >
           <IPCopyBar variant="large" />
+          <PlayerCount />
         </motion.div>
       </div>
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import TallyMarks from "./TallyMarks";
+import PlayerCount from "./PlayerCount";
 
 const NAV_ITEMS = [
   { label: "Features", href: "#features" },
@@ -56,6 +57,7 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
+          <PlayerCount />
           <button
             onClick={() => scrollTo("#hero")}
             className="px-4 py-2 border border-soul-cyan/30 text-soul-cyan text-sm font-bold tracking-wider hover:bg-soul-cyan/10 transition-all"
