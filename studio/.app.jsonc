@@ -1,0 +1,5 @@
+// Studio sync — optional ID used by pull/publish tooling.
+// Keep out of public repos if your workflow treats this as private.
+{
+  "id": "69f9ce370b40af0b3026546c"
+}
